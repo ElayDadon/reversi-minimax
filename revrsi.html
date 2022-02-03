@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en"><head><title>רברסי גם נגד מחשב</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="ezov.css"/>
+</head><body>
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+    <script src="settings.js"></script>
+    <script src="computer.js"></script>
+    <script src="winscore.js"></script>
+
+    <div style="position:absolute">
+    </div>
+
+    <h1>Reversi</h1>
+    <!--the html calls the board.dotable function which adds cells to the table
+    and binds onclick event to each cell-->
+    <table class="centerGame">
+        <script>board.createTable();</script>
+    </table>
+    <div id="message" class="centerGame"></div>
+    <div class="btnbar">
+        <input type="button" class="btn" name="restart" value="Start" />
+        <input type="button" class="btn" name="options" value="Options" />
+    </div>
+    <div id="gameover"></div>
+    <script>
+        pageLoaded();</script>
+</body></html>
